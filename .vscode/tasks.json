@@ -7,8 +7,11 @@
             "command": "bash",
             "args": [
                 "-c",
-                "g++ '${file}' -o '${fileDirname}/${fileBasenameNoExtension}' && '${fileDirname}/${fileBasenameNoExtension}'"
+                "g++ -I.. '${file}' -o '${fileDirname}/${fileBasenameNoExtension}' && '${fileDirname}/${fileBasenameNoExtension}'"
             ],
+            "options": {
+                "cwd": "${workspaceFolder}/C++"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -17,7 +20,7 @@
             "presentation": {
                 "echo": true,
                 "reveal": "always",
-                "focus": false,
+                "focus": true, // Focus the terminal after running the task
                 "panel": "shared"
             }
         }
