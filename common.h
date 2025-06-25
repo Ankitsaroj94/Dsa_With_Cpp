@@ -15,6 +15,5 @@
 #include <unordered_set>
 #include <vector>
 
-// Add any other common headers or macros here
 
 using namespace std;

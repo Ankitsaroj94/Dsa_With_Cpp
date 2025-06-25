@@ -7,4 +7,4 @@ int main(){
     cin >> legth;
     int area = legth * legth;
     cout << "The area of the square is: " << area << endl;
-}
+}                                       
